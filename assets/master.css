@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: rgb(189, 232, 239);
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(58, 177, 236);
+  color: white;
+}
+.container {
+  width: 80%;
+  box-shadow: 0 0 10px 0 rgb(188, 186, 186);
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+}
+.container > figure {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.container > figure > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 4px 4px 0 0 #17b9b4;
+  object-fit: cover;
+}
+.container > figure > span {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background-color: #17b9b4;
+  padding: 4px 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+.container > h2 {
+  margin: 15px 0 10px 0;
+  text-align: center;
+}
+.container > p {
+  margin: 10px 0;
+  text-align: center;
+  color: rgb(193, 192, 192);
+}
+.container > div {
+  margin: 10px 0;
+  color: #118e8a;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+}
+.container > div > span > i {
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #2bebe5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #12afaa;
+}
+h3 {
+  color: #2bebe5;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
+}
